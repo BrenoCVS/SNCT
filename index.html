@@ -188,7 +188,7 @@
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   }
 
-  /* Responsividade extra */
+  
   @media (max-width: 480px) {
     .screen {
       padding: 10px;
@@ -379,8 +379,10 @@ Nem tudo o que parece confiável na tela realmente é, e aqui você vai descobri
 </p>
         </div>
 
-        <p>Por favor responda à essa pesquisa sobre o nosso trabalho <a href="https://forms.gle/KWnaVHx3q4bxpPZ66"> Clique Aqui </a></p>
-
+        <div class="card">
+          <strong>Pesquisa</strong>
+        <p>Por favor responda a essa pesquisa sobre o nosso trabalho <a href="https://forms.gle/KWnaVHx3q4bxpPZ66"> Clique Aqui </a></p>
+        </div>
 
         <footer>Autores: Breno Cauã Vialle, Maria Luiza Duarte, João Victor Lopes — BSI 2</footer>
       </div>
@@ -415,7 +417,6 @@ function typeMsg(){
 }
 window.onload = () => { typeMsg(); };
 
-// Impede navegação antes de liberar conteúdo
 document.addEventListener("keydown", e => e.preventDefault());
 document.addEventListener("contextmenu", e => e.preventDefault());
 window.onbeforeunload = () => "A página ainda está carregando!";
